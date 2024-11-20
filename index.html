@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>لعبة إكس-أو</title>
+		<meta name="author" content="23MohammedYT">
+		<meta name="description" content="لعبة إكس-أو ممتعة مع خيارات للعب ضد لاعب آخر أو ضد الحاسوب.">
+		<meta name="keywords" content="لعبة, إكس-أو, لاعب ضد لاعب, لاعب ضد الحاسوب, ألعاب, 23MohammedYT">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<body dir="rtl">
+		<div class="game-container">
+			<div id="main-menu" class="menu">
+				<h1>مرحبًا بك في لعبة إكس-أو</h1>
+				<button id="pvp" class="menu-button">لاعب ضد لاعب</button>
+				<button id="pvc" class="menu-button">لاعب ضد الحاسوب</button>
+			</div>
+			<div id="game" style="display: none;">
+				<h1>لعبة إكس-أو</h1>
+				<div id="board" class="board"></div>
+				<p id="status" class="status">دور اللاعب X</p>
+				<button id="reset" class="reset-button">إعادة تشغيل اللعبة</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

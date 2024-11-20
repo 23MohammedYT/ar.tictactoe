@@ -1,0 +1,155 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+}
+
+/* Game Container */
+.game-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    width: 320px;
+}
+
+/* Main Menu Styling */
+.menu h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu-button {
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+    width: 80%;
+}
+
+.menu-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #feb47b 0%, #ff7e5f 100%);
+}
+
+/* Board and Buttons Styling (Same as previous) */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Board Styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: inset 0px -3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cell:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.cell.taken {
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Status and Reset Button */
+.status {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.reset-button {
+    background: linear-gradient(135deg, #f45c43 0%, #eb3349 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.reset-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 400px) {
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+
+    .game-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .status {
+        font-size: 1rem;
+    }
+
+    .reset-button {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+}
